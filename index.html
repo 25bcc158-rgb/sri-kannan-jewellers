@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="logo.png" alt="Sri Kannan Jewellers Logo" class="logo">
+      <img src="images/logo.png" alt="Sri Kannan Jewellers Logo" class="logo">
       <h1>Sri Kannan Jewellers</h1>
     </div>
     <nav>
@@ -24,8 +24,8 @@
   </header>
 
   <section id="home" class="banner">
-    <h2>Elegant Designs, Timeless Beauty</h2>
-    <p>Discover our exclusive jewellery collections crafted with love and tradition.</p>
+    <h2>Luxury Jewellery, Timeless Elegance</h2>
+    <p>Discover exclusive gold and silver collections crafted with heritage.</p>
     <a href="#products" class="shop-btn">Shop Now</a>
   </section>
 
@@ -35,24 +35,28 @@
       <div class="product-card">
         <img src="images/necklace.jpg" alt="Gold Necklace">
         <h3>Gold Necklace</h3>
-        <p>Traditional handcrafted necklace with intricate detailing.</p>
+        <p>Price: <span class="price" data-type="gold" data-weight="10">Loading...</span></p>
+        <button class="pay-btn" data-name="Gold Necklace" data-type="gold" data-weight="10">Buy Now</button>
       </div>
       <div class="product-card">
         <img src="images/ring.jpg" alt="Diamond Ring">
         <h3>Diamond Ring</h3>
-        <p>Elegant diamond ring perfect for special occasions.</p>
+        <p>Price: <span class="price" data-type="gold" data-weight="5">Loading...</span></p>
+        <button class="pay-btn" data-name="Diamond Ring" data-type="gold" data-weight="5">Buy Now</button>
       </div>
       <div class="product-card">
-        <img src="images/bracelet.jpg" alt="Gold Bracelet">
-        <h3>Gold Bracelet</h3>
-        <p>Stylish bracelet combining modern design and classic charm.</p>
+        <img src="images/silver-chain.jpg" alt="Silver Chain">
+        <h3>Silver Chain</h3>
+        <p>Price: <span class="price" data-type="silver" data-weight="20">Loading...</span></p>
+        <button class="pay-btn" data-name="Silver Chain" data-type="silver" data-weight="20">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/silver-ring.jpg" alt="Silver Ring">
+        <h3>Silver Ring</h3>
+        <p>Price: <span class="price" data-type="silver" data-weight="8">Loading...</span></p>
+        <button class="pay-btn" data-name="Silver Ring" data-type="silver" data-weight="8">Buy Now</button>
       </div>
     </div>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Sri Kannan Jewellers has been a trusted name in fine jewellery for decades. We specialize in gold, silver, and diamond ornaments that reflect elegance and heritage.</p>
   </section>
 
   <section id="payment">
@@ -63,7 +67,7 @@
       <div class="payment-card">🏦 Net Banking</div>
       <div class="payment-card">💵 Cash on Delivery</div>
     </div>
-    <p class="note">* Secure transactions ensured. For online payments, please contact us for details.</p>
+    <p class="note">* Secure transactions powered by Razorpay.</p>
   </section>
 
   <section id="contact">
@@ -80,6 +84,8 @@
     <p>&copy; 2026 Sri Kannan Jewellers. All rights reserved.</p>
   </footer>
 
+  <!-- Razorpay Checkout Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
