@@ -1,13 +1,11 @@
-/* General styles */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   background-color: #fffaf0;
 }
 
-/* Header */
 header {
   background: linear-gradient(90deg, #b8860b, #d4af37);
   color: white;
@@ -46,18 +44,17 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Banner */
 .banner {
   background: url('images/banner.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   background-blend-mode: overlay;
   background-color: rgba(184, 134, 11, 0.6);
 }
 
 .banner h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
@@ -77,7 +74,6 @@ nav ul li a {
   background: #b8860b;
 }
 
-/* Products */
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -92,8 +88,13 @@ nav ul li a {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 240px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card img {
@@ -102,7 +103,21 @@ nav ul li a {
   border-radius: 8px;
 }
 
-/* Payment Section */
+.pay-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #b8860b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pay-btn:hover {
+  background: #d4af37;
+}
+
 .payment-options {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +143,6 @@ nav ul li a {
   margin-top: 10px;
 }
 
-/* Contact */
 form {
   display: flex;
   flex-direction: column;
@@ -152,7 +166,6 @@ form button {
   border-radius: 5px;
 }
 
-/* Footer */
 footer {
   background: #b8860b;
   color: white;
